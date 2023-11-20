@@ -1,11 +1,3 @@
-<!--
- * @Author       : Scipline
- * @Since        : 2023-11-20 16:49:43
- * @LastEditor   : Scipline
- * @LastEditTime : 2023-11-20 16:56:38
- * @FileName     : README.md
- * @Description  : 
--->
 # 背景
 [Merlin插件](https://chromewebstore.google.com/detail/merlin-1-click-access-to/camppjleccjaphfdbohjdohecfnoikec)免费用户每天免费使用一定额度CHATGPT3.5/4,或者其他AI模型，所以注册多了几个账号，再搭配此插件方便一键直接切换账号，方便免费薅羊毛。
 
