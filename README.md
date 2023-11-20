@@ -27,3 +27,26 @@
 > Q:导出没有反应
 >
 > A:确保已经登录账号
+
+# 安装教程
+
+## 1. 下载插件
+
+点击 [Releases](https://github.com/Scipline/MerlinDBManage/releases) 页面下载最新版本的插件。
+
+## 2. 安装插件
+
+### 2.1. 解压插件
+
+将下载的插件解压到本地,需要一个稳定的文件路径。
+
+### 2.2 打开开发者模式
+
+在 Chrome 浏览器中，点击扩展程序图标，在弹出的页面中选择 "开发者模式。
+![Alt text](images/HowToOpenDeveloperMode.png)
+
+### 2.3 加载插件
+
+选择 "加载已解压的扩展程序"，选择解压后的文件夹。
+## 3. 开始使用
+![Alt text](images/HowToUse.png)

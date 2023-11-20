@@ -26,3 +26,25 @@ By providing simple and user-friendly data import and export functionality, this
 > Q: No response when clicking the export button.
 
 > A: Ensure that you are logged into your account.  
+# Installation Guide
+
+## 1. Download the Plugin
+
+Click on the [Releases](https://github.com/Scipline/MerlinDBManage/releases) page to download the latest version of the plugin.
+
+## 2. Install the Plugin
+
+### 2.1. Unzip the Plugin
+
+Unzip the downloaded plugin to your local drive, you will need a stable file path.
+
+### 2.2. Enable Developer Mode
+
+In the Chrome browser, click on the extensions icon, then select "Developer Mode" in the pop-up page.
+![Alt text](images/HowToOpenDeveloperMode.png)
+
+### 2.3. Load the Plugin
+
+Select "Load Unpacked Extension", then choose the unzipped folder.
+## 3. Start Using
+![Alt text](images/HowToUse.png)  
