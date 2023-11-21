@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Merlin Database Export/Import",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "description": "The tool helps users manage and backup data for Merlin accounts, allowing them to easily switch accounts",
     "author": "Scipline",
     "host_permissions": ["https://app.getmerlin.in/*"],
@@ -27,7 +27,7 @@
     },
     "options_ui": {
         "page": "options.html",
-        "open_in_tab": false
+        "open_in_tab": true
     },
     "content_scripts": [{
             "matches": ["https://app.getmerlin.in/*"],
