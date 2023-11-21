@@ -2,6 +2,109 @@
 const dbName = 'firebaseLocalStorageDb';
 const storeName = 'firebaseLocalStorage';
 
+function fetchIdToken(refreshToken, callback) {
+    const myHeaders = new Headers({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+        "Content-Type": "application/x-www-form-urlencoded"
+    });
+
+    const urlencoded = new URLSearchParams({
+        grant_type: "refresh_token",
+        refresh_token: refreshToken
+    });
+
+    const requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: urlencoded,
+        redirect: 'follow'
+    };
+
+    fetch("https://securetoken.googleapis.com/v1/token?key=AIzaSyAvCgtQ4XbmlQGIynDT-v_M8eLaXrKmtiM", requestOptions)
+    .then(response => response.json())
+    .then(result => fetchAccessTokenData(result.id_token, callback))
+    .catch(error => console.log('error', error));
+}
+
+function fetchAccessTokenData(accessToken, callback) {
+    const myHeaders = new Headers({
+        "authority": "merlin-uam-yak3s7dv3a-ue.a.run.app",
+        "accept": "*/*",
+        "accept-language": "zh-CN,zh;q=0.9",
+        "cache-control": "no-cache",
+        "origin": "https://app.getmerlin.in",
+        "pragma": "no-cache",
+        "referer": "https://app.getmerlin.in/",
+        "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "cross-site",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+        "content-type": "application/json"
+    });
+
+    const raw = JSON.stringify({
+        "token": accessToken
+    });
+
+    const requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+
+    fetch("https://merlin-uam-yak3s7dv3a-ue.a.run.app/session/get", requestOptions)
+    .then(response => response.json())
+    .then(resp => {
+        callback({
+            accessToken: resp.data.accessToken,
+            refreshToken: resp.data.refreshToken
+        });
+    })
+    .catch(error => {
+        console.log('error', error);
+        callback(null);
+    });
+}
+
+function handleTokens(tokens) {
+    if (tokens) {
+
+        const accessToken = tokens.accessToken
+            const refreshToken = tokens.refreshToken
+            console.log('Access Token:', accessToken);
+        console.log('Refresh Token:', refreshToken);
+        console.log(`chrome.runtime.sendMessage('camppjleccjaphfdbohjdohecfnoikec',{from:"MERLIN_APP",action:"SIGNIN",payload:{session:{"accessToken":"${accessToken}","refreshToken":"${refreshToken}"},closeTab:false}});`)
+        // 设计到扩展跨域问题，不能直接触发监听事件
+        // sendMessageToChromeExtension(accessToken, refreshToken)
+        window.location.replace("https://app.getmerlin.in/sign-in");
+
+    } else {
+        console.log("Error fetching tokens.");
+    }
+}
+
+/**
+ * function sendMessageToChromeExtension(accessToken, refreshToken) {
+ * const Pd = 'camppjleccjaphfdbohjdohecfnoikec';
+ * const data = {
+ * "accessToken": accessToken,
+ * "refreshToken": refreshToken
+ * };
+ * chrome.runtime.sendMessage(Pd, {
+ * from: "MERLIN_APP",
+ * action: "SIGNIN",
+ * payload: {
+ * session: data,
+ * closeTab: false
+ * }
+ * });
+ * };
+ */
+
 /**
  * 下载 JSON 数据为文件
  * @param {string} json - JSON 数据字符串
@@ -37,6 +140,7 @@ function readFile(file) {
 /**
  * 导出功能
  */
+
 function exportDatabase() {
     const openRequest = indexedDB.open(dbName);
 
@@ -85,8 +189,9 @@ function importDatabase() {
         try {
             const fileContent = await readFile(file);
             const jsonData = JSON.parse(fileContent);
-            const openRequest = indexedDB.open(dbName);
+            const refreshToken = jsonData.value.stsTokenManager.refreshToken
 
+                const openRequest = indexedDB.open(dbName);
             openRequest.onsuccess = (event) => {
                 const db = event.target.result;
                 const transaction = db.transaction(storeName, 'readwrite');
@@ -106,11 +211,15 @@ function importDatabase() {
                         console.log('Database restored successfully.');
                     };
                 };
+
             };
 
             openRequest.onerror = () => {
                 console.error('Error opening database.');
             };
+            // 调用 fetchIdToken 函数
+            fetchIdToken(refreshToken, handleTokens);
+
         } catch (error) {
             console.error('Error reading file:', error);
         }
@@ -139,7 +248,7 @@ if (document.readyState === 'loading') {
     onContentLoaded();
 }
 chrome.runtime.sendMessage({
-  messageType: 'showNotification',
-  title: 'Extension installed',
-  message: 'Thank you for installing the Merlin Database Backup extension.',
+    messageType: 'showNotification',
+    title: 'Extension installed',
+    message: 'Thank you for installing the Merlin Database Backup extension.',
 });

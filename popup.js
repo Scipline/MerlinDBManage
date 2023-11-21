@@ -1,6 +1,6 @@
 // popup.js
 function isMerlinUrl(url) {
-  return url.startsWith('https://app.getmerlin.in/');
+  return url.startsWith('https://app.getmerlin.in');
 }
 
 document.getElementById('exportButton').addEventListener('click', () => {
