@@ -3,7 +3,7 @@
 
 # Introduction
 
-This plugin is a Google Chrome extension customized for the website "https://app.getmerlin.in/*". It aims to streamline user interaction with the IndexedDB database on the website, providing data import and export functionality. Users can easily back up data from the website and restore it when needed.
+This plugin is a Google Chrome extension customized for the website "https://app.getmerlin.in/". It aims to streamline user interaction with the IndexedDB database on the website, providing data import and export functionality. Users can easily back up data from the website and restore it when needed.
 
 **Key Features:**
 
