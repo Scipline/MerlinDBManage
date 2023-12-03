@@ -1,0 +1,29 @@
+{
+	"fbase_key": "firebase:authUser:AIzaSyAvCgtQ4XbmlQGIynDT-v_M8eLaXrKmtiM:[DEFAULT]",
+	"value": {
+		"uid": "Wsixuxtr9lXRylL4dnj77ZIFswA2",
+		"email": "_ooo2506@spinwheelnow.com",
+		"emailVerified": false,
+		"displayName": "xAzUiLkJQ7i5Y0a6",
+		"isAnonymous": false,
+		"providerData": [
+			{
+				"providerId": "password",
+				"uid": "_ooo2506@spinwheelnow.com",
+				"displayName": "xAzUiLkJQ7i5Y0a6",
+				"email": "_ooo2506@spinwheelnow.com",
+				"phoneNumber": null,
+				"photoURL": null
+			}
+		],
+		"stsTokenManager": {
+			"refreshToken": "APZUo0R_1nYIiWT74heO-g23Fp0bsMr_Hw753uoCtzMvl_PistC91UXeDaWf_Vc2i_d4N_OGVcBvhcE0k5eePnFR7udxbDCH74Xn1NYblBEHsjIiMpE6tNxLfZVJAT82AtSwTiJd-Ho9sVJ6HKFGcG91UXWrG9uyJ3KriqfolN0742kGic69N0TlO8VJUW-yqgXlvMh0TGdhUk2MTgAJCqnN_et80899iA",
+			"accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZm95ZXItd29yayIsImF1ZCI6ImZveWVyLXdvcmsiLCJhdXRoX3RpbWUiOjE2ODcyODkxNjAsInVzZXJfaWQiOiJXc2l4dXh0cjlsWFJ5bEw0ZG5qNzdaSUZzd0EyIiwic3ViIjoiV3NpeHV4dHI5bFhSeWxMNGRuajc3WklGc3dBMiIsImlhdCI6MTY4NzI4OTE2MCwiZXhwIjoxNjg3MjkyNzYwLCJlbWFpbCI6Il9vb28yNTA2QHNwaW53aGVlbG5vdy5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiX29vbzI1MDZAc3BpbndoZWVsbm93LmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.O_wuVZa3JyjAUuflRzDPxDH-T-9-1F6EqrbUH_kMzbguWmRPnPeyrMiElMZQz-sFsBqC9umZrAEo33UUOmSXWPmX-AT45U8DCTQiuF9j8Jv5Fs0cTXcyQ3TtXn2MTvMPe1MBQWJgWWZQFLjqLJtHfzaO1DRV1rEAYR0_ueGTVWGeMEsQOb090HE0C2hmx0kPnblDOrg1tD6aUoaOxXBKyLw9hUqNWswXB_OnvuJ6MkqjALyfSsO_Bm4PhlV3-2G7k5XnOhYN68WtTDrp6gm3j0m86m6vN6I8QELASFaaFYQaaNOUL3y_HsG6lrtdBf6tL0fvfMI9kZvtkJyAuv1vbg",
+			"expirationTime": 1687292764023
+		},
+		"createdAt": "1687289159958",
+		"lastLoginAt": "1687289159958",
+		"apiKey": "AIzaSyAvCgtQ4XbmlQGIynDT-v_M8eLaXrKmtiM",
+		"appName": "[DEFAULT]"
+	}
+}

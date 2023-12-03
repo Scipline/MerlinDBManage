@@ -1,0 +1,29 @@
+{
+	"fbase_key": "firebase:authUser:AIzaSyAvCgtQ4XbmlQGIynDT-v_M8eLaXrKmtiM:[DEFAULT]",
+	"value": {
+		"uid": "1DjAAUypvRTmT21qHNRiHnyr2YI2",
+		"email": "_0llldb2@justdefinition.com",
+		"emailVerified": false,
+		"displayName": "tUqYwScDU8h9U5g2",
+		"isAnonymous": false,
+		"providerData": [
+			{
+				"providerId": "password",
+				"uid": "_0llldb2@justdefinition.com",
+				"displayName": "tUqYwScDU8h9U5g2",
+				"email": "_0llldb2@justdefinition.com",
+				"phoneNumber": null,
+				"photoURL": null
+			}
+		],
+		"stsTokenManager": {
+			"refreshToken": "APZUo0TA-DGSp-VyyBqORWHxReWaimk1jrO8d93aYDgjyOha08JU3qvq9aI_WuZNnmuc2Flw4UzqARcU5BBIPsDfqmBcH79H8DqM2nXFv5cSRiv2S69_K5a5LR91NMb4A_eDysN0PmxsGNKmnuX2OzR-EyEGURImEouq3DmSsepjeBx52rmEhHqEMzLYsmTjs3K2_tY01ByOk-p7Zu6kTDII5sA2o0g9Ow",
+			"accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZm95ZXItd29yayIsImF1ZCI6ImZveWVyLXdvcmsiLCJhdXRoX3RpbWUiOjE2ODcyODU3MTAsInVzZXJfaWQiOiIxRGpBQVV5cHZSVG1UMjFxSE5SaUhueXIyWUkyIiwic3ViIjoiMURqQUFVeXB2UlRtVDIxcUhOUmlIbnlyMllJMiIsImlhdCI6MTY4NzI4NTcxMCwiZXhwIjoxNjg3Mjg5MzEwLCJlbWFpbCI6Il8wbGxsZGIyQGp1c3RkZWZpbml0aW9uLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJfMGxsbGRiMkBqdXN0ZGVmaW5pdGlvbi5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.W054Nxzxmpl3gMDxyuD_4Wc6aMWuw9xSPiMLm5NBjigAsJjruhCkMIRwBaOXzYC52MNkqT3GfHeDquC_QlEenUxBACXHXWr4qh4yFQjV7u59IEwU-Wiy5Tjz0AzcjXq6ipeyCFOOxpWSUwQYG7KMTvB4SiKOjG_xoSimZ6Jnpius1Oli0ZKoF0w5T8qtwhq0w6KgGO12vjiVg20y20dFkTg_bHqe_0kY1ztrTzHhT4Qe9qHWuooGxJPlfOoiKg2yOYD6dX-TRW3Hr-B0Dxm3-urPSMEZXuvKQ0pRyfMXFIi0O87nbzR2CH29aFywgYSrd2X5ilmmfHk6QRp_GkWsYQ",
+			"expirationTime": 1687289314023
+		},
+		"createdAt": "1687285709932",
+		"lastLoginAt": "1687285709932",
+		"apiKey": "AIzaSyAvCgtQ4XbmlQGIynDT-v_M8eLaXrKmtiM",
+		"appName": "[DEFAULT]"
+	}
+}

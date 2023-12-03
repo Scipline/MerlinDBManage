@@ -1,0 +1,29 @@
+{
+	"fbase_key": "firebase:authUser:AIzaSyAvCgtQ4XbmlQGIynDT-v_M8eLaXrKmtiM:[DEFAULT]",
+	"value": {
+		"uid": "N31mbJ2p7CgFF5cWwRvkf3cBFew1",
+		"email": "_ajp_c8e@randompickers.com",
+		"emailVerified": false,
+		"displayName": "fVcDbHwGQ5j3A1v5",
+		"isAnonymous": false,
+		"providerData": [
+			{
+				"providerId": "password",
+				"uid": "_ajp_c8e@randompickers.com",
+				"displayName": "fVcDbHwGQ5j3A1v5",
+				"email": "_ajp_c8e@randompickers.com",
+				"phoneNumber": null,
+				"photoURL": null
+			}
+		],
+		"stsTokenManager": {
+			"refreshToken": "APZUo0QoFpkKx2zoT5XaVtAcHXdQ8442M2K_COci7Q33w82DI5isKhpHkhVjWjxT64EClnMQwv6PHeEuO2AaJdxSeIFfhfSu9H-nWeku_Z7R5doih0R2hRcCiEzu9RAYmOSPuK7ntgkJiX9ry7hGGn2PclzPDPnBD48v6UMUO9ksm2NbmCNBx-Lf9x13IcP2X1sr5uymypuErCyBZJQplYprEXeyAHvu2A",
+			"accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZm95ZXItd29yayIsImF1ZCI6ImZveWVyLXdvcmsiLCJhdXRoX3RpbWUiOjE2ODcyODAxMzYsInVzZXJfaWQiOiJOMzFtYkoycDdDZ0ZGNWNXd1J2a2YzY0JGZXcxIiwic3ViIjoiTjMxbWJKMnA3Q2dGRjVjV3dSdmtmM2NCRmV3MSIsImlhdCI6MTY4NzI4MDEzNiwiZXhwIjoxNjg3MjgzNzM2LCJlbWFpbCI6Il9hanBfYzhlQHJhbmRvbXBpY2tlcnMuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIl9hanBfYzhlQHJhbmRvbXBpY2tlcnMuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.LOMXGiziZOZOK0h2sCVVGTwjRf_YjgWduFLbaZJ2BuUGE_p57U5Q4JKoNLfRq4J9ASKCob8mcpHUB7_TEp6IA3PDHJK9fwL0YKHFb-nZ43lfuveDWrKJ1X6caYVPh41-r9neMDMtpIYRU0_ghU0i05M-jHPJ4O-t1Cg88r5rrDcLfBYm4g1f0gx0Ph032CGrQYNxP-BThv7CursTTzU2x2L43v_uDHZtUNStd0YFm7LvACqCmgt1uToGbqOe2t-ZlEXtS-NExsVfPD4ITauKwYFXjXSjBx9o4SGOy6RGqFWTIB_qXkk8F8sZp_14P6KfO05B-qFwu3IFHnFcymVFQw",
+			"expirationTime": 1687283740239
+		},
+		"createdAt": "1687280135975",
+		"lastLoginAt": "1687280135975",
+		"apiKey": "AIzaSyAvCgtQ4XbmlQGIynDT-v_M8eLaXrKmtiM",
+		"appName": "[DEFAULT]"
+	}
+}
